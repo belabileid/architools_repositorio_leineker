@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.534);
+}
+.SelectIdioma{
+    border: none;
+    margin: 5px 5px 5px 5px;
+    display: inline;
+}
+
+.SelectIdioma h3{
+    color: cornflowerblue;
+    text-align: end;
+    font-size: 15px;
+}
+
+.SelectIdioma img{
+    width: 300px;
+    height: 150px;
+    position: relative;
+    left: 40px;
+}
+
+.EncabezadoDePagina{
+    display: inline;
+    position: relative;
+    margin: 60px 10px 20px 10px;
+}
+.EncabezadoDePagina a{
+    margin-top: 40px;
+}
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9534206695778749) 0%, rgba(211,240,255,0.9475982532751092) 40%);
+    font-family:'Montserrat', sans-serif;
+}
+
+a{
+  color: rgba(9, 9, 61, 0.89);
+}
+
+#MenuPrincipal{
+    list-style: none;
+    background: rgba(26, 30, 37, 0.842);
+    color: whitesmoke;
+    padding: 0px;
+    border-top: solid 3px blue;
+    border-bottom: solid 3px blue;
+    border-style: double;
+    width: auto;
+    max-width: 100%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+#MenuPrincipal a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+}
+
+.menu ul ul li{
+    display: block
+    
+}
+
+.menu li:hover{
+    background-color: rgb(84, 164, 240);
+}
+
+.menu li a:hover{
+    background-color: blueviolet;
+}
+
+.menu ul li:hover ul{
+    display: block;
+    background-color: blueviolet;
+}
+
+
+h1{
+    font-size: 45px;
+    color: darkblue;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+h2{
+    font-size: 25px;
+    color: darkblue;
+    text-transform :uppercase;
+}
+
+h3{
+    font-size: 19px;
+    color: rgb(0, 0, 78);
+}
+
+.SecRecomendados{
+    background-color: rgba(240, 248, 255, 0.514);
+    margin: 5px;
+    padding: 15px;
+}
+
+.SecDataBase{
+    background-color: rgba(18, 116, 173, 0.425);
+    margin: 5px;
+    padding: 15px;
+}
+
+.SecLibrary{
+    background-color: rgba(240, 248, 255, 0.514);
+    margin: 5px;
+    padding: 15px;
+}
+
+.SecStudents{
+    background-color: rgba(18, 116, 173, 0.425);
+    margin: 5px;
+    padding: 15px;
+}
+
+.SecCompetitions{
+    background-color: rgba(240, 248, 255, 0.514);
+    margin: 5px;
+    padding: 15px;
+}
+
+.SecTablaDeMembresia table{
+    background-color: azure;
+}
+
+.MembresiaFirstTime{
+    padding: 50px;
+    background-image: url(../media/image/67107.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.MembresiaStandardPack{
+    padding: 50px;
+    color: antiquewhite;
+    background-image: url(../media/image/Casa_Embrion_E14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.MembresiaFullConection{
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    background-image: url(https://ec.aciprensa.com/newwiki/images/9/9c/Que-ver-en-barcelona-la-ruta-de-gaudi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.MembresiaVipPass{
+    padding: 50px;
+    background-image: url(https://fahrenheitmagazine.com/sites/default/files/field/image/zaha_hadid_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.SecFooter{
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    border-top: solid 5px whitesmoke;
+}
+
+.SecFooter a{
+    color: whitesmoke;
+}
+
+
