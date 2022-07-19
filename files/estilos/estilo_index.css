@@ -1,0 +1,1161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FORMATOS DE FUENTES PARA TODA EL PROYECTO:
+
+1) Para H1 (solo "ARCHITOOLS, my world") de encabezado de página: font-family: 'Big Shoulders Stencil Display', cursive;
+
+2) Para H2: font-family: 'Oxanium', cursive;
+            font-size: 25px;
+    Para H3:font-family: 'Oxanium', cursive;
+            font-size: 19px;
+            
+3) Para textos en general: font-family: 'Gruppo', cursive;*/
+
+
+/*A partir de aquí se copia estilo para HEADER, LOGO y MENÚ*/
+body{
+    font-family: 'Gruppo', cursive;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(202, 231, 231) 40%);
+}
+
+.header{
+    width: 100%;
+    height: 25vh auto;
+    padding: 5px;
+    background-color: black;
+}
+
+h1{
+    font-size: 45px;
+    color: aliceblue;
+    letter-spacing: 10px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+.SelectIdioma h3{
+    color: rgb(137, 194, 194);
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    font-size: 15px;
+}
+
+.logo h1{
+    display: inline;
+    position: absolute;
+    top: 25vh ;
+    left: 34vw ;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.logo a{
+    display: block;
+    color: rgb(191, 195, 199);
+    font-size: 15px;
+}
+
+a{
+  color: rgba(9, 9, 61, 0.89);
+}
+
+.MenuPrincipal{
+    list-style: none;
+    background: rgba(26, 30, 37, 0.842);
+    color: whitesmoke;
+    padding: 0.3px;
+    width: auto;
+    height: 8vh auto;
+    text-align: center;
+    position: sticky;
+    top: 1px;
+
+}
+
+.MenuPrincipal a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+}
+
+.menu ul ul li{
+    display: block
+    
+}
+
+.menu li:hover{
+    color: black;
+    background-color: rgb(122, 248, 238);
+}
+
+.menu li a:hover{
+    color: rgb(179, 37, 103);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu ul li:hover ul{
+    display: block;
+    color: black;
+}
+
+h2{
+    font-family: 'Oxanium', cursive;
+    font-size: 25px;
+    color: rgb(0, 0, 85);
+    text-transform :uppercase;
+}
+
+h3{
+    font-family: 'Oxanium', cursive;
+    font-size: 19px;
+    color: rgb(0, 0, 85);
+}
+
+/*Fin de copia para área repetida en todas las pages.*/
+/*A partir de aquí, comienza el estilo de la HOME PAGE.*/
+.Contenedor{
+    display: grid;
+    row-gap: 1px;
+    width: 100%;
+    height: 200px auto;
+    grid-template-areas: 
+    "SecRecomendados SecRecomendados"
+    "SecDataBase SecDataBase"
+    "SecLibrary SecLibrary"
+    "SecStudents SecStudents"
+    "SecCompetitions SecCompetitions"
+}
+
+.SecRecomendados{
+    margin: 5px;
+    padding: 15px;
+    grid-area: SecRecomendados;
+}
+
+.SecRecomendados p{
+    grid-column: 1/2;
+}
+
+.SecRecomendados h2:hover{
+    transform: rotateY(360deg);
+    transition: all 4s;
+}
+
+.SecRecomendados img{
+    width: 70%;
+    height: auto;
+}
+
+.SecDataBase{
+    margin: 5px;
+    padding: 15px;
+    grid-area: SecDataBase;
+}
+
+.SecDataBase h2:hover{
+    transform: rotateY(360deg);
+    transition: all 4s;
+}
+
+.SecDataBase img{
+    width: 70%;
+    height: auto;
+}
+
+.SecLibrary{
+    margin: 5px;
+    padding: 15px;
+    grid-area: SecLibrary;
+}
+
+.SecLibrary h2:hover{
+    transform: rotateY(360deg);
+    transition: all 4s;
+}
+
+.SecLibrary img{
+    width: 70%;
+    height: auto;
+}
+
+.SecStudents{
+    background-color: rgba(18, 116, 173, 0.425);
+    margin: 5px;
+    padding: 15px;
+    grid-area: SecStudents;
+}
+
+.SecStudents h2:hover{
+    transform: rotateY(360deg);
+    transition: all 4s;
+}
+
+.SecStudents p{
+    grid-column: 1/2;
+}
+
+.SecCompetitions{
+    margin: 5px;
+    padding: 15px;
+    grid-area: SecCompetitions;
+}
+
+.SecCompetitions h2:hover{
+    transform: rotateY(360deg);
+    transition: all 4s;
+}
+
+.SecCompetitions img{
+    width: 70%;
+    height: auto;
+}
+/*Fin de estilo para HOME PAGE*/
+
+/*Aquí comienza estilo del Footer. Copiar en todos los estilos de pages*/
+
+/*Estilos para FORMULARIO DE CONTACTO.HTML*/
+
+.FormularioDeContacto{
+    font-size: 22px;
+}
+.FormularioDeContacto input{
+    width: 135px; height: 25px;
+    transition: all 1.5s;
+}
+
+.FormularioDeContacto input:focus{
+    width: 250px;
+    font-size: 20px;
+}
+
+.genero input{
+    height: 15px;
+}
+
+
+/*Fin estilo para FORMULARIO DE CONTACTO.HTML*/
+
+.SecFooter{
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    border-top: solid 5px whitesmoke;
+    grid-area: SecFooter;
+}
+
+.SecFooter a{
+    color: whitesmoke;
+}
+
+/*Queries. Copy and paste en todos los estilos. Chequear los ajustes.*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: black;
+    }
+    h1{
+        color: antiquewhite;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: whitesmoke;
+    }
+    h1{
+        color: rgb(4, 4, 71);
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {background-color: aliceblue;
+    }
+    h1{
+        color: rgb(22, 23, 24);
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {background-color: rgb(162, 162, 163);
+    }
+    h1{
+        color: rgb(28, 28, 29);
+        font-size: 16px;
+    }
+}
+
+
+/*ESTILO DATABASE PAGE*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FORMATOS DE FUENTES PARA TODA EL PROYECTO:
+
+1) Para H1 (solo "ARCHITOOLS, my world") de encabezado de página: font-family: 'Big Shoulders Stencil Display', cursive;
+
+2) Para H2: font-family: 'Oxanium', cursive;
+            font-size: 25px;
+    Para H3:font-family: 'Oxanium', cursive;
+            font-size: 19px;
+            
+3) Para textos en general: font-family: 'Gruppo', cursive;*/
+
+
+/*A partir de aquí se copia estilo para HEADER, LOGO y MENÚ*/
+body{
+    font-family: 'Gruppo', cursive;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(202, 231, 231) 40%);
+}
+
+.header{
+    width: 100%;
+    height: 25vh auto;
+    padding: 5px;
+    background-color: black;
+}
+
+h1{
+    font-size: 45px;
+    color: aliceblue;
+    letter-spacing: 10px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+.SelectIdioma h3{
+    color: rgb(137, 194, 194);
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    font-size: 15px;
+}
+
+.logo h1{
+    display: inline;
+    position: absolute;
+    top: 25vh ;
+    left: 34vw ;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.logo a{
+    display: block;
+    color: rgb(191, 195, 199);
+    font-size: 15px;
+}
+
+.logo img{
+    display: inline;
+    width: 30%;
+    height: 30%;
+    border: none;
+    opacity: 100%;
+}
+
+.logo img:hover{
+    border: none;
+}
+
+a{
+  color: rgba(9, 9, 61, 0.89);
+}
+
+.MenuPrincipal{
+    list-style: none;
+    background: rgba(26, 30, 37, 0.842);
+    color: whitesmoke;
+    padding: 0.3px;
+    width: auto;
+    height: 8vh auto;
+    text-align: center;
+    position: sticky;
+    top: 1px;
+
+}
+
+.MenuPrincipal a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+}
+
+.menu ul ul li{
+    display: block
+    
+}
+
+.menu li:hover{
+    color: black;
+    background-color: rgb(122, 248, 238);
+}
+
+.menu li a:hover{
+    color: rgb(179, 37, 103);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu ul li:hover ul{
+    display: block;
+    color: black;
+}
+
+h2{
+    font-family: 'Oxanium', cursive;
+    font-size: 25px;
+    color: rgb(0, 0, 85);
+    text-transform :uppercase;
+}
+
+h3{
+    font-family: 'Oxanium', cursive;
+    font-size: 19px;
+    color: rgb(0, 0, 85);
+}
+
+/*Fin de copia para área repetida en todas las pages.*/
+/*A partir de aquí, comienza el estilo de la DATABASE SECTION.*/
+
+.PortadaDatabase img{
+    opacity: 1;
+    background-color: none;
+    width: 1000px;
+    height: auto;
+}
+
+img{
+    width: 500px;
+    height: 400px;
+    opacity: .5;
+    border: 2px double black;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ContenidoDatabase1{
+    margin: 10px;
+}
+
+.ContenidoDatabase1 p{
+    width: 500px;
+    height: auto;
+}
+
+.ContenidoDatabase1 p a{
+    font-style: italic;
+    font-size: 150%;
+}
+
+img:hover{
+    opacity: 1;
+    border: white solid 3px;
+}
+
+.ContenidoDatabase2{
+    margin: 10px;
+}
+
+.ContenidoDatabase3{
+    margin: 10px;
+}
+
+.ContenidoDatabase4{
+    margin: 10px;
+}
+
+/*Aquí comienza estilo del Footer. Copiar en todos los estilos de pages*/
+
+.SecFooter{
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    border-top: solid 5px whitesmoke;
+    grid-area: SecFooter;
+}
+
+.SecFooter a{
+    color: whitesmoke;
+}
+
+/*Queries. Copy and paste en todos los estilos. Chequear los ajustes.*/
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: black;
+    }
+    h1{
+        color: antiquewhite;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: whitesmoke;
+    }
+    h1{
+        color: rgb(4, 4, 71);
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {background-color: aliceblue;
+    }
+    h1{
+        color: rgb(22, 23, 24);
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {background-color: rgb(162, 162, 163);
+    }
+    h1{
+        color: rgb(28, 28, 29);
+        font-size: 16px;
+    }
+}
+
+
+/*ESTILO LIBRARY PAGE*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FORMATOS DE FUENTES PARA TODA EL PROYECTO:
+
+1) Para H1 (solo "ARCHITOOLS, my world") de encabezado de página: font-family: 'Big Shoulders Stencil Display', cursive;
+
+2) Para H2: font-family: 'Oxanium', cursive;
+            font-size: 25px;
+    Para H3:font-family: 'Oxanium', cursive;
+            font-size: 19px;
+            
+3) Para textos en general: font-family: 'Gruppo', cursive;*/
+
+
+/*A partir de aquí se copia estilo para HEADER, LOGO y MENÚ*/
+body{
+    font-family: 'Gruppo', cursive;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(202, 231, 231) 40%);
+}
+
+.header{
+    width: 100%;
+    height: 25vh auto;
+    padding: 5px;
+    background-color: black;
+}
+
+h1{
+    font-size: 45px;
+    color: aliceblue;
+    letter-spacing: 10px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+.SelectIdioma h3{
+    color: rgb(137, 194, 194);
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    font-size: 15px;
+}
+
+.logo h1{
+    display: inline;
+    position: absolute;
+    top: 25vh ;
+    left: 34vw ;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.logo a{
+    display: block;
+    color: rgb(191, 195, 199);
+    font-size: 15px;
+}
+
+a{
+  color: rgba(9, 9, 61, 0.89);
+}
+
+.MenuPrincipal{
+    list-style: none;
+    background: rgba(26, 30, 37, 0.842);
+    color: whitesmoke;
+    padding: 0.3px;
+    width: auto;
+    height: 8vh auto;
+    text-align: center;
+    position: sticky;
+    top: 1px;
+}
+
+.MenuPrincipal a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+}
+
+.menu ul ul li{
+    display: block
+    
+}
+
+.menu li:hover{
+    color: black;
+    background-color: rgb(122, 248, 238);
+}
+
+.menu li a:hover{
+    color: rgb(179, 37, 103);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu ul li:hover ul{
+    display: block;
+    color: black;
+}
+
+h2{
+    font-family: 'Oxanium', cursive;
+    font-size: 25px;
+    color: rgb(0, 0, 85);
+    text-transform :uppercase;
+}
+
+h3{
+    font-family: 'Oxanium', cursive;
+    font-size: 19px;
+    color: rgb(0, 0, 85);
+}
+
+/*Fin de copia para área repetida en todas las pages.*/
+/*A partir de aquí, comienza el estilo de la LIBRARY SECTION.*/
+
+main{
+    background-color: none;
+    margin-bottom: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+    align-items: center;
+}
+
+.Contenido{
+    width: 10%;
+    height: 30vh;
+    margin: 0.5rem;
+}
+
+.Libreria1{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+.Libreria2{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+.Libreria3{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+.Libreria4{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+.Libreria5{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+.Libreria6{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+.Libreria7{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+.Libreria8{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+.Libreria9{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+.Libreria10{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+.Libreria11{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+.Libreria12{
+    background-color: bisque;
+    margin: 30px;
+    height: auto;
+    padding: 5px;
+}
+
+/*Aquí comienza estilo del Footer. Copiar en todos los estilos de pages*/
+
+.SecFooter{
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    border-top: solid 5px whitesmoke;
+    grid-area: SecFooter;
+}
+
+.SecFooter a{
+    color: whitesmoke;
+}
+
+/*Queries. Copy and paste en todos los estilos. Chequear los ajustes.*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: black;
+    }
+    h1{
+        color: antiquewhite;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: whitesmoke;
+    }
+    h1{
+        color: rgb(4, 4, 71);
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {background-color: aliceblue;
+    }
+    h1{
+        color: rgb(22, 23, 24);
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {background-color: rgb(162, 162, 163);
+    }
+    h1{
+        color: rgb(28, 28, 29);
+        font-size: 16px;
+    }
+}
+
+/*MEMBRESIA PAGE*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FORMATOS DE FUENTES PARA TODA EL PROYECTO:
+
+1) Para H1 (solo "ARCHITOOLS, my world") de encabezado de página: font-family: 'Big Shoulders Stencil Display', cursive;
+
+2) Para H2: font-family: 'Oxanium', cursive;
+            font-size: 25px;
+    Para H3:font-family: 'Oxanium', cursive;
+            font-size: 19px;
+            
+3) Para textos en general: font-family: 'Gruppo', cursive;*/
+
+
+/*A partir de aquí se copia estilo para HEADER, LOGO y MENÚ*/
+body{
+    font-family: 'Gruppo', cursive;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(202, 231, 231) 40%);
+}
+
+.header{
+    width: 100%;
+    height: 25vh auto;
+    padding: 5px;
+    background-color: black;
+}
+
+h1{
+    font-size: 45px;
+    color: aliceblue;
+    letter-spacing: 10px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+}
+
+.SelectIdioma h3{
+    color: rgb(137, 194, 194);
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    font-size: 15px;
+}
+
+.logo h1{
+    display: inline;
+    position: absolute;
+    top: 25vh ;
+    left: 34vw ;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.logo a{
+    display: block;
+    color: rgb(191, 195, 199);
+    font-size: 15px;
+}
+
+a{
+  color: rgba(9, 9, 61, 0.89);
+}
+
+.MenuPrincipal{
+    list-style: none;
+    background: rgba(26, 30, 37, 0.842);
+    color: whitesmoke;
+    padding: 0.3px;
+    width: auto;
+    height: 8vh auto;
+    text-align: center;
+    position: sticky;
+    top: 1px;
+}
+
+.MenuPrincipal a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+}
+
+.menu ul ul li{
+    display: block
+    
+}
+
+.menu li:hover{
+    color: black;
+    background-color: rgb(122, 248, 238);
+}
+
+.menu li a:hover{
+    color: rgb(179, 37, 103);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu ul li:hover ul{
+    display: block;
+    color: black;
+}
+
+h2{
+    font-family: 'Oxanium', cursive;
+    font-size: 25px;
+    color: rgb(0, 0, 85);
+    text-transform :uppercase;
+}
+
+h3{
+    font-family: 'Oxanium', cursive;
+    font-size: 19px;
+    color: rgb(0, 0, 85);
+}
+
+/*Fin de copia para área repetida en todas las pages.*/
+/*A partir de aquí, comienza el estilo de la MEMBRESÍA SECTION.*/
+
+main{
+    width: 99%;
+    height: 110vh;
+    padding: 5px;
+    border: 2px black double;
+    background-color: none;
+    display: grid;
+    grid-template-areas:
+    "TituloMembresia TituloMembresia TituloMembresia TituloMembresia"
+    "MembresiaFirstTime MembresiaStandardPack MembresiaFullConection MembresiaVipPass"
+    "NosContactaremos NosContactaremos NosContactaremos NosContactaremos"
+    "EnvioDeSeleccion EnvioDeSeleccion EnvioDeSeleccion EnvioDeSeleccion";
+    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+    align-items: start;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.TituloMembresia{
+    padding: 5px;
+    background-color: rgba(138, 196, 196, 0.863);
+    align-self: center;
+    grid-area: TituloMembresia;
+}
+
+.TituloMembresia h2{
+    font-size: 30px;
+    font-style: italic;
+    align-self: center;
+    grid-area: TituloMembresia;
+}
+
+.MembresiaFirstTime{
+    padding: 50px;
+    background-image: url(../media/image/67107.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    grid-area: MembresiaFirstTime;
+}
+
+.MembresiaStandardPack{
+    padding: 50px;
+    color: antiquewhite;
+    background-image: url(../media/image/Casa_Embrion_E14.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    grid-area: MembresiaStandardPack;
+}
+
+.MembresiaFullConection{
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    background-image: url(https://ec.aciprensa.com/newwiki/images/9/9c/Que-ver-en-barcelona-la-ruta-de-gaudi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    grid-area: MembresiaFullConection;
+}
+
+.MembresiaVipPass{
+    padding: 50px;
+    background-image: url(https://fahrenheitmagazine.com/sites/default/files/field/image/zaha_hadid_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    grid-area: MembresiaVipPass;
+}
+
+.NosContactaremos{
+    padding: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    grid-area: NosContactaremos;
+}
+
+.EnvioDeSeleccion{
+    padding: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: end;
+    grid-area: EnvioDeSeleccion;
+}
+
+/*Aquí comienza estilo del Footer. Copiar en todos los estilos de pages*/
+
+.SecFooter{
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    border-top: solid 5px whitesmoke;
+    grid-area: SecFooter;
+}
+
+.SecFooter a{
+    color: whitesmoke;
+}
+
+/*Queries. Copy and paste en todos los estilos. Chequear los ajustes.*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: black;
+    }
+    h1{
+        color: antiquewhite;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: whitesmoke;
+    }
+    h1{
+        color: rgb(4, 4, 71);
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {background-color: aliceblue;
+    }
+    h1{
+        color: rgb(22, 23, 24);
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {background-color: rgb(162, 162, 163);
+    }
+    h1{
+        color: rgb(28, 28, 29);
+        font-size: 16px;
+    }
+}
